@@ -11,16 +11,22 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Touching safe ground mate!");
                 break;
             case "Finish":
-                Debug.Log("Made it to the end mate!");
-                break;
-            case "Fuel":
-                Debug.Log("Right on! You filled up mate!");
+                LoadNextLevel();
                 break;
             default:
-                Debug.Log("Hit the dirt mate!");
                 ReloadLevel();
                 break;
         }
+    }
+    void LoadNextLevel()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            nextSceneIndex = 0;
+        }
+        SceneManager.LoadScene(nextSceneIndex);
     }
 
     void ReloadLevel()
