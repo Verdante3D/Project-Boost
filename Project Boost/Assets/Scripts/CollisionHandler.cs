@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] float delayDuration = 1f;
+
     void OnCollisionEnter(Collision collision)
     {
         switch (collision.gameObject.tag)
@@ -11,13 +14,30 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Touching safe ground mate!");
                 break;
             case "Finish":
-                LoadNextLevel();
+                StartSuccessSequence();
                 break;
             default:
-                ReloadLevel();
+                StartCrashSequence();
                 break;
         }
     }
+
+    void StartSuccessSequence()
+    {
+        //TODO add SFX upon success
+        //TODO add particle effect upon success
+        GetComponent<Movement>().enabled = false;
+        Invoke("LoadNextLevel", delayDuration);
+    }
+
+    void StartCrashSequence()
+    {
+        //TODO add SFX upon crash
+        //TODO add particle effect upon crash
+        GetComponent<Movement>().enabled = false;
+        Invoke("ReloadLevel", delayDuration);
+    }
+
     void LoadNextLevel()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
