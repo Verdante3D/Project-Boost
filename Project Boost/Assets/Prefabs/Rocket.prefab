@@ -669,7 +669,7 @@ MonoBehaviour:
   mainThrust: 1000
   rotateSpeed: 100
   mainEngine: {fileID: 8300000, guid: e97f7e85256d0e04b92824cbb3ffce06, type: 3}
-  mainThrustParticles: {fileID: 7063556798046564054}
+  mainEngineParticles: {fileID: 7063556798046564054}
   leftThrustParticles: {fileID: 8793287468769041492}
   rightThrustParticles: {fileID: 3555170820408062249}
 --- !u!82 &8791845217886676794
@@ -781,8 +781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayDuration: 1
-  success: {fileID: 8300000, guid: baf1b87864a8766419ab78d24d57ad8a, type: 3}
-  crash: {fileID: 8300000, guid: 415b49bd1219a794bb241ad28775a755, type: 3}
+  successAudio: {fileID: 8300000, guid: baf1b87864a8766419ab78d24d57ad8a, type: 3}
+  crashAudio: {fileID: 8300000, guid: 415b49bd1219a794bb241ad28775a755, type: 3}
   successParticles: {fileID: 1762246641637694364}
   crashParticles: {fileID: 1612705588609114882}
 --- !u!65 &7257117324297312727
@@ -941,7 +941,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 765908706338028246, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
       propertyPath: m_Name
-      value: Side Thruster Particles
+      value: Right Thruster Particles
       objectReference: {fileID: 0}
     - target: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
       propertyPath: m_RootOrder
@@ -1075,7 +1075,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 765908706338028246, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
       propertyPath: m_Name
-      value: Side Thruster Particles (1)
+      value: Left Thruster Particles
       objectReference: {fileID: 0}
     - target: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
       propertyPath: m_RootOrder

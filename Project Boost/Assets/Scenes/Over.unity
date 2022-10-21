@@ -189,11 +189,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &478481756 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7063556798046564054, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
-  m_PrefabInstance: {fileID: 8722116653610892802}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &570156128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3145907178540025475, guid: 0b94bc23c66f69841939bc38134d1469, type: 3}
@@ -276,7 +271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998228453}
   m_LocalRotation: {x: 0.12941939, y: -0, z: -0, w: 0.99158996}
-  m_LocalPosition: {x: 0, y: 12.9, z: -32.4}
+  m_LocalPosition: {x: 0, y: 8.8, z: -10.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -570,26 +565,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1573447860, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
-      propertyPath: mainEngineParticles
-      value: 
-      objectReference: {fileID: 478481756}
-    - target: {fileID: 3555170820408062249, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3741012446293988765, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
-      propertyPath: m_Name
-      value: Right Thruster Particles
-      objectReference: {fileID: 0}
-    - target: {fileID: 7063556798046564054, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8697637960225781984, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
-      propertyPath: m_Name
-      value: Left Thruster Particles
-      objectReference: {fileID: 0}
     - target: {fileID: 8722116652171663021, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
       propertyPath: m_Name
       value: Rocket
@@ -637,10 +612,6 @@ PrefabInstance:
     - target: {fileID: 8722116652171663025, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8793287468769041492, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
-      propertyPath: looping
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbb8ea4655f3a0a42af02e312cc4f04f, type: 3}
